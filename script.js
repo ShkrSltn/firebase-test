@@ -33,6 +33,9 @@ document.getElementById('loginButton').addEventListener('click', () => {
             const errorMessage = error.message;
             console.error('Ошибка входа:', errorCode, errorMessage);
         });
+
+    // Change page to main.html
+    window.location.href = 'main.html';
 });
 
 // Обработчик нажатия кнопки для регистрации
@@ -52,6 +55,7 @@ document.getElementById('registerButton').addEventListener('click', () => {
             const errorMessage = error.message;
             console.error('Ошибка регистрации:', errorCode, errorMessage);
         });
+    window.location.href = 'main.html';
 });
 
 
@@ -70,4 +74,5 @@ document.getElementById('googleButton').addEventListener('click', () => {
             const errorMessage = error.message;
             console.error('Ошибка входа через Google:', errorCode, errorMessage);
         });
+    window.location.href = 'main.html';
 });
